@@ -1,3 +1,4 @@
 # ELk-Project
 #
 
+![diagram.png]
