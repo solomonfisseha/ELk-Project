@@ -5,9 +5,9 @@
 
 ![GitHub](diagram.png)
 * ![ansible config](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Unsolved/Resources/ansible.cfg)
-* make change: 
-  remote_users: RedAdmin
-
+  # make change:  
+     remote_users: RedAdmin  
+ 
 * ![Ansible host file](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Solved/Resources/hosts)
 * ![installing ELk](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Solved/Resources/install-elk.yml)
 * ![Filebeat Configuration file](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/filebeat-configuration.yml)
@@ -107,7 +107,6 @@
   * Copy the '/etc/ansible/files/filebeat-config.yml' file to '/etc/filebeat/filebeat-playbook.yml'
   * Update the 'filebeat-playbook.yml' file to include the username, password and hosts
  
-      output
 
  # Use pip module
      
