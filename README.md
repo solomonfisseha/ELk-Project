@@ -88,9 +88,9 @@
         
 - The following screenshot displays the result of running 'docker ps' after successfully configuring the ELK instance.
 
-![GitHub](Elk-SERVER PS.png)
-![GitHub](web-1.png)
-![GitHub](web-2.png)
+![GitHub](Elk-SERVER ps.png)
+![GitHub](web-1 ps.png)
+![GitHub](web-2 ps.png)
 ## Target Machines and Beats
 - This ELK server is configured to monitor the following machines:
      * Web1: 10.0.0.5
