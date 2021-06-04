@@ -1,4 +1,4 @@
 # ELk-Project
 #
 
-#![diagram.png]
+![GitHub](diagram.png)
