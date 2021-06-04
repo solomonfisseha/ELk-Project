@@ -89,11 +89,55 @@
 - The following screenshot displays the result of running 'docker ps' after successfully configuring the ELK instance.
 
 ![GitHub](Elk-SERVER PS.png)
+## Target Machines and Beats
+- This ELK server is configured to monitor the following machines:
+     * Web1: 10.0.0.5
+     * Web2: 10.0.0.6
+- we have installed the following Beats on these machines:
+     * Filebeat
+     * Metricbeat
 
-
-
+- These Beats allow us to collect the following information from each machine:
+      * Filebeat used to collect log files and to track log information including which file changed and when.
+      * Metricbeat used to collect metrics from system and services . It uses to monitor and analyze system CPU, memory and load.
+## Using the Playbook
+- In order to use the playbook, you will need to have an Ansible control node already configured.
+- Assuming you have such a control node provisioned:
+- SSH into the control node and follow the steps below:
+  * Copy the '/etc/ansible/files/filebeat-config.yml' file to '/etc/filebeat/filebeat-playbook.yml'
+  * Update the 'filebeat-playbook.yml' file to include the username, password and hosts
  
+      output
 
+ # Use pip module
+     
+          root@5546adde19c0:/etc/ansible/files# nano filebeat-config.yml
 
+          output.elasticsearch:
+            hosts: ["10.1.0.4:9200"]
+            username: "elastic"
+            password: "changeme"
+            ...
+          setup.kibana:
+            host: "10.1.0.4:5601"
+            
+          The command to download filebeat:
+          curl -L -O  https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
+          
+          The command to download metricbeat:
+          curl -L -O https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/files/metricbeat-config.yml
+
+-Run the playbook, and navigate to 'ansible-playbook filebeat-playbook.yml' to check that the installation worked as expected.          
+- Run IP address of the ELK-SERVER check the ELK server is running: "ELK-SERVER IP address:5601/app/kibana" in URL.
+- Commands the user will need to run to download the playbook, update the files, etc.
+# Commands:
+- sudo apt-get update                                 to update the package
+- sudo apt install docker.io                          to install docker application
+- sudo docker ps -a                                   to check the containers are running
+- sudo docker start <image-name>                      to start the image specified
+- sudo docker attach <image-name>                     to sshing into the ansible
+  sudo docker pull cyberxsecurity/ansible             to download the docker file
+  sudo docker run -ti cyberxsecurity/ansible bash     to run and creat the docker image
+  
 
 
