@@ -136,8 +136,8 @@
 - sudo docker ps -a                                   to check the containers are running
 - sudo docker start <image-name>                      to start the image specified
 - sudo docker attach <image-name>                     to sshing into the ansible
-  sudo docker pull cyberxsecurity/ansible             to download the docker file
-  sudo docker run -ti cyberxsecurity/ansible bash     to run and creat the docker image
+- sudo docker pull cyberxsecurity/ansible             to download the docker file
+- sudo docker run -ti cyberxsecurity/ansible bash     to run and creat the docker image
   
 
 
