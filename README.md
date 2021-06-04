@@ -22,10 +22,10 @@ Ansible hosts
 Ansible playbook
 Ansible ELK Installation and VM configuration
 Ansible filebeat config file
-*![playbook.yml](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/filebeat-playbook.yml)
+
 Ansible metricbeat config file
 Ansible metricbeat playbook
-
+*![playbook.yml](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
