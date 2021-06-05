@@ -88,7 +88,7 @@
         
 - The following screenshot displays the result of running 'docker ps' after successfully configuring the ELK instance.
 
-![GitHub](Elk-Project/Elk-SERVER PS.png)
+![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/Elk-SERVER%20PS.png)
 ![GitHub](ELK-Project/web-1 ps.png)
 ![GitHub](ELK-Project/web-2 ps.png)
 ## Target Machines and Beats
