@@ -1,9 +1,9 @@
 # ELk-Project
+This files is the repository were used to configure the network depicated below.
+![GitHub](diagram.png)
 #These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml and config file may be used to install only certain pieces of it, such as Filebeat.
 
 
-
-![GitHub](diagram.png)
 * ![ansible config](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Unsolved/Resources/ansible.cfg)
   # make change:  
      remote_users: RedAdmin  
@@ -34,7 +34,7 @@
     host: "10.1.0.4:5601"
 
 * ![Meatricbeat playbook](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/metricbeat-playbook.yml)
-## This document contains the following details:
+# This document contains the following details:
 * Description of the Topology
 * Access Policies
 * ELK Configuration
@@ -49,16 +49,31 @@
 - Integrating an ELK Server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat watches and monitors the log files or locations that users specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. It is a lightweight shipper for forwarding and centeralizing log data.
 - Metricbeat is a lightweight shipper that records and periodically collects metrics from the operationg system and from services running on the server and takes the metrics and statistics that it collects and ships them to the output that users specify, such as Elasticsearch or Logstash.
- -The configuratioon details of each machine may be found below.
+- The configuratioon details of each machine may be found below.
+ 
+ |   Name     |   Function      |  IP Address           |  Operating System  |
+ |:-----------:|:----------------:|:----------------------:|:-------------------:|
+ |  Jump Box  |     Gateway     |  10.0.0.4/13.72.75.41 |     Linux          |
+ |Web1|Web Server|10.0.0.5|Linux|
+ |Web2|Web Server|10.0.0.6|Linux|
+ |Elk|ELK Server|10.1.0.4/Elk Servier IP Adress|Linux|
+ 
 
-## Access Policies
-- The machines on the internal network are not exposed to the public Intersnet.
+### Access Policies
+- The machines on the internal network are not exposed to the public Internet.
 - Only the Jumb Box machine can accept connections from the Internet. Acess to this machine is only allowed from following IP addresses:13.72.75.41.
 - Machines within the network can only be accessed by workstation and Jumb-Box.
  -The machine that allow to access ELK VM:
-* Jumb-Box: 10.0.0.4/22
-* workstation: TCP 5601
+     * Jumb-Box: 10.0.0.4/22
+     * workstation: TCP 5601
 - A summary of the access policies in place can be found in the table below.
+
+|   Name  |   Publicly Accessible  |  Allowed IP Addresses  |
+|:-------:|:----------------------:|:----------------------:|
+| Jump Box |   Yes   |   13.72.75.41   |
+|Web1|No|10.0.0.5|
+|Web2|No|10.0.0.6|
+|Elk|No|10.1.0.4|
 ## ELK Configuration
 - Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because Ansible lets you quickly and easily deploy multi tier apps. It helps from doing the same prosedure everytime on the IT administration and save us a lot of time.
 - the steps of the ELK installation play:
@@ -89,8 +104,8 @@
 - The following screenshot displays the result of running 'docker ps' after successfully configuring the ELK instance.
 
 ![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/Elk-SERVER%20PS.png)
-![GitHub]https://github.com/solomonfisseha/ELk-Project/blob/main/web-1%20ps.png)
-![GitHub](ELK-Project/web-2 ps.png)
+![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/web-1%20ps.png)
+![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/web-2%20ps.png)
 ## Target Machines and Beats
 - This ELK server is configured to monitor the following machines:
      * Web1: 10.0.0.5
