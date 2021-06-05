@@ -146,14 +146,16 @@ This files is the repository were used to configure the network depicated below.
 -Run the playbook, and navigate to 'ansible-playbook filebeat-playbook.yml' to check that the installation worked as expected.          
 - Run IP address of the ELK-SERVER check the ELK server is running: "ELK-SERVER IP address:5601/app/kibana" in URL.
 - Commands the user will need to run to download the playbook, update the files, etc.
-# Commands:
-- sudo apt-get update                                 to update the package
-- sudo apt install docker.io                          to install docker application
-- sudo docker ps -a                                   to check the containers are running
-- sudo docker start <image-name>                      to start the image specified
-- sudo docker attach <image-name>                     to sshing into the ansible
-- sudo docker pull cyberxsecurity/ansible             to download the docker file
-- sudo docker run -ti cyberxsecurity/ansible bash     to run and creat the docker image
+
+|  Command| purpose|
+|:--------|:--------|
+|sudo apt-get update|                                 to update the package|
+|sudo apt install docker.io |                         to install docker application|
+|sudo docker ps -a                            |       to check the containers are running|
+|sudo docker start <image-name>              |        to start the image specified|
+|sudo docker attach <image-name>            |         to sshing into the ansible|
+|sudo docker pull cyberxsecurity/ansible   |          to download the docker file|
+|sudo docker run -ti cyberxsecurity/ansible bash|     to run and creat the docker image|
   
 
 
