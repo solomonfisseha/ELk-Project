@@ -1,17 +1,18 @@
 # ELk-Project
 This files is the repository were used to configure the network depicated below.
 ![Network Diagram](diagram.png)
-- These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml and config file may be used to install only certain pieces of it, such as Filebeat.
+
+...These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml and config file may be used to install only certain pieces of it, such as Filebeat.
 
 
 * ![ansible config](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Unsolved/Resources/ansible.cfg)
-  # make change:  
+  ###### make change:  
              remote_users: RedAdmin  
 
 * ![Ansible host file](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Solved/Resources/hosts)
 * ![installing ELk](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_1/Solved/Resources/install-elk.yml)
 * ![Filebeat Configuration file](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/filebeat-configuration.yml)
- # make change: 
+ ###### make change: 
     output.elasticsearch:
     hosts: ["10.1.0.4:9200"]
     username: "elastic"
@@ -24,7 +25,7 @@ This files is the repository were used to configure the network depicated below.
    
 * ![filebeat Playbook](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/filebeat-playbook.yml)
 * ![Metricbeat Configuration File](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/metricbeat-configuration.yml)
- # make change: 
+ ###### make change: 
     output.elasticsearch:
     hosts: ["10.1.0.4:9200"]
     username: "elastic"
@@ -34,7 +35,7 @@ This files is the repository were used to configure the network depicated below.
     host: "10.1.0.4:5601"
 
 * ![Meatricbeat playbook](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-MCC-VIRT-CYBER-PT-03-2021-U-C/blob/main/Lesson%20Plans/13-Elk-Stack-Project/Activities/Stu_Day_2/Solved/config_files/metricbeat-playbook.yml)
-# This document contains the following details:
+###### This document contains the following details:
 * Description of the Topology
 * Access Policies
 * ELK Configuration
@@ -106,7 +107,7 @@ This files is the repository were used to configure the network depicated below.
 ![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/Elk-SERVER%20PS.png)
 ![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/web-1%20ps.png)
 ![GitHub](https://github.com/solomonfisseha/ELk-Project/blob/main/web-2%20ps.png)
-## Target Machines and Beats
+###### Target Machines and Beats
 - This ELK server is configured to monitor the following machines:
      * Web1: 10.0.0.5
      * Web2: 10.0.0.6
@@ -117,7 +118,7 @@ This files is the repository were used to configure the network depicated below.
 - These Beats allow us to collect the following information from each machine:
       * Filebeat used to collect log files and to track log information including which file changed and when.
       * Metricbeat used to collect metrics from system and services . It uses to monitor and analyze system CPU, memory and load.
-## Using the Playbook
+###### Using the Playbook
 - In order to use the playbook, you will need to have an Ansible control node already configured.
 - Assuming you have such a control node provisioned:
 - SSH into the control node and follow the steps below:
@@ -125,7 +126,7 @@ This files is the repository were used to configure the network depicated below.
   * Update the 'filebeat-playbook.yml' file to include the username, password and hosts
  
 
- # Use pip module
+ ###### Use pip module
      
           root@5546adde19c0:/etc/ansible/files# nano filebeat-config.yml
 
